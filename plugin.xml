@@ -9,14 +9,14 @@
     <engine name="cordova" version=">=3.0.0" />
     </engines>
 
-    <js-module name="Gps" src="www/gps.js">
-      <clobbers target="com.aquamontes.gps"/>
+    <js-module name="GpsPlugin" src="www/gps.js">
+      <clobbers target="GpsPlugin"/>
     </js-module>
 
 <!-- android -->
     <platform name="android">
       <config-file parent="/*" target="res/xml/config.xml">
-        <feature name="Gps">
+        <feature name="GpsPlugin">
           <param name="android-package" value="com.aquamontes.gps.Gps"/>
         </feature>
       </config-file>
