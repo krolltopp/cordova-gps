@@ -4,6 +4,7 @@ import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import android.os.Bundle;
 import android.content.Context;
 import android.location.Criteria;
 import android.location.Location;
