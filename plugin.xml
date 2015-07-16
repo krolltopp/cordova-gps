@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="com.cordova.plugins.sms" version="1.0.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.phonegap.com/ns/plugins/1.0">
+<plugin id="com.aquamontes.gps" version="1.0.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.phonegap.com/ns/plugins/1.0">
   <name>Cordova GPS Plugin</name>
   <description>Android GPS Plugin</description>
   <license>MIT</license>
