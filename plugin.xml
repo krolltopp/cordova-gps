@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.cordova.plugins.sms" version="1.0.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.phonegap.com/ns/plugins/1.0">
+  <name>Cordova SMS Plugin</name>
+  <description>Android GPS Plugin</description>
+  <license>MIT</license>
+  <keywords>cordova,gps</keywords>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module name="Gps" src="www/gps.js">
+      <clobbers target="window.gps"/>
+    </js-module>
+
+<!-- android -->
+    <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+        <feature name="Gps">
+          <param name="android-package" value="com.aquamontes.gps.Gps"/>
+        </feature>
+      </config-file>
+
+      <config-file parent="/manifest" target="AndroidManifest.xml">
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+      </config-file>
+
+      <source-file src="src/android/Gps.java" target-dir="src/com/aquamontes/gps"/>
+    </platform>
+  </plugin>
