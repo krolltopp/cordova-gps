@@ -32,8 +32,9 @@ public class Gps extends CordovaPlugin implements LocationListener {
     if (action.equals("gpspos")) {
       if (location != null) {
         callbackContext.success("pos available");
+        return true;
       } else {
-        callbackContext.success("no pos available");
+        callbackContext.error("no pos available");
         return false;
       }
     } else {
