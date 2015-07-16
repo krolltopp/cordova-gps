@@ -5,26 +5,22 @@
   <license>MIT</license>
   <keywords>cordova,gps</keywords>
 
-  <engines>
-    <engine name="cordova" version=">=3.0.0" />
-    </engines>
-
-    <js-module name="GpsPlugin" src="www/gps.js">
-      <clobbers target="GpsPlugin"/>
-    </js-module>
+  <js-module name="gps" src="www/gps.js">
+    <clobbers target="gps"/>
+  </js-module>
 
 <!-- android -->
-    <platform name="android">
-      <config-file parent="/*" target="res/xml/config.xml">
-        <feature name="GpsPlugin">
-          <param name="android-package" value="com.aquamontes.gps.Gps"/>
-        </feature>
-      </config-file>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="Gps">
+        <param name="android-package" value="com.aquamontes.gps.Gps"/>
+      </feature>
+    </config-file>
 
-      <config-file parent="/manifest" target="AndroidManifest.xml">
-        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-      </config-file>
+    <config-file parent="/manifest" target="AndroidManifest.xml">
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    </config-file>
 
-      <source-file src="src/android/Gps.java" target-dir="src/com/aquamontes/gps"/>
-    </platform>
-  </plugin>
+    <source-file src="src/android/Gps.java" target-dir="src/com/aquamontes/gps"/>
+  </platform>
+</plugin>
