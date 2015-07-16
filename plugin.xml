@@ -10,7 +10,7 @@
     </engines>
 
     <js-module name="Gps" src="www/gps.js">
-      <clobbers target="window.gps"/>
+      <clobbers target="com.aquamontes.gps"/>
     </js-module>
 
 <!-- android -->
