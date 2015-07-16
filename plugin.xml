@@ -6,7 +6,7 @@
   <keywords>cordova,gps</keywords>
 
   <js-module name="gps" src="www/gps.js">
-    <clobbers target="gps"/>
+    <clobbers target="navigator.gps"/>
   </js-module>
 
 <!-- android -->
