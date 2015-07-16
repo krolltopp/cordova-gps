@@ -19,7 +19,7 @@ public class Gps extends CordovaPlugin implements LocationListener {
   private Location location;
   private String provider;
 
-  protected void pluginInitialize()
+  protected void pluginInitialize() {
     Criteria criteria = new Criteria();
     criteria.setAccuracy(Criteria.ACCURACY_FINE);
     locationManager = (LocationManager) this.webView.getContext().getSystemService(Context.LOCATION_SERVICE);
