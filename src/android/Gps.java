@@ -1,4 +1,4 @@
-package com.aquamontes.gps
+package com.aquamontes.gps;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
