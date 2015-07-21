@@ -5,8 +5,12 @@
   <license>MIT</license>
   <keywords>cordova,gps</keywords>
 
+  <engines>
+    <engine name="cordova" version=">=3.6.0" />
+  </engines>
+
   <js-module name="gps" src="www/gps.js">
-    <clobbers target="navigator.gps"/>
+    <clobbers target="gps"/>
   </js-module>
 
 <!-- android -->
